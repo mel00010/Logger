@@ -28,3 +28,7 @@ target_sources(Logger
 		${CMAKE_CURRENT_SOURCE_DIR}/StreamLogger.hpp
 		${CMAKE_CURRENT_SOURCE_DIR}/SysLogger.hpp
 )
+target_include_directories(Logger
+	PUBLIC
+		${CMAKE_CURRENT_SOURCE_DIR}/
+)
