@@ -55,7 +55,6 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 #Subdirectories
 add_subdirectory(src)
 add_subdirectory(test)
-add_subdirectory(docs)
 
 # uninstall target
 if(NOT TARGET uninstall)
