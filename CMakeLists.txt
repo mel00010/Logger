@@ -5,8 +5,6 @@ project (Logger)
 
 include(GNUInstallDirs)
 
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
-
 set( CMAKE_CXX_FLAGS_COVERAGE "${CMAKE_CXX_FLAGS_DEBUG}" CACHE STRING
     "Flags used by the C++ compiler during coverage builds."
     FORCE )
@@ -54,16 +52,3 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 #Subdirectories
 add_subdirectory(src)
-add_subdirectory(test)
-
-# uninstall target
-if(NOT TARGET uninstall)
-
-	configure_file(
-		"${CMAKE_SOURCE_DIR}/cmake/Uninstall.cmake.in"
-		"${CMAKE_CURRENT_BINARY_DIR}/Uninstall.cmake"
-		IMMEDIATE @ONLY)
-	
-	add_custom_target(uninstall
-		COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/Uninstall.cmake)
-endif()
