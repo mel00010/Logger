@@ -33,6 +33,11 @@
 
 #include <memory>
 
+#if __has_include(<glm/gtx/io.hpp>)
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/gtx/io.hpp>
+#endif /* __has_include(<glm/gtx/io.hpp>) */
+
 /* Macro Code */
 
 #ifndef MIN_LOG_LEVEL
