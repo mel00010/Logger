@@ -31,12 +31,34 @@
 #include "StreamLogger.hpp"
 #include "SysLogger.hpp"
 
+#include <iomanip>
 #include <memory>
+#include <string>
+#include <sstream>
 
 #if __has_include(<glm/gtx/io.hpp>)
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/io.hpp>
 #endif /* __has_include(<glm/gtx/io.hpp>) */
+
+
+template<typename Integer> inline std::string hex(Integer data, size_t space = 8) {
+	std::stringstream ss;
+	ss << std::setfill('0') << std::setw(sizeof(Integer)*2) << std::uppercase << std::hex << data;
+
+	std::string s = "0x";
+	size_t j = 1;
+
+	for(auto& i : ss.str()) {
+		if(j % (space + 1) == 0) {
+			s.push_back(' ');
+			j++;
+		}
+		s.push_back(i);
+		j++;
+	}
+	return s;
+}
 
 /* Macro Code */
 
