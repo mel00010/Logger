@@ -33,7 +33,7 @@
                             							
                             <targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.release.267968430" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.release"/>
                             							
-                            <builder buildPath="/Logger/build/Release" id="de.marw.cdt.cmake.core.genscriptbuilder.2112678736" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="CMake Builder (portable)" parallelBuildOn="true" parallelizationNumber="optimal" superClass="de.marw.cdt.cmake.core.genscriptbuilder"/>
+                            <builder buildPath="/Logger/build/Release" id="de.marw.cdt.cmake.core.genscriptbuilder.2112678736" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="CMake Builder (portable)" parallelBuildOn="false" superClass="de.marw.cdt.cmake.core.genscriptbuilder"/>
                             							
                             <tool id="cdt.managedbuild.tool.gnu.archiver.base.1936319820" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
                             							
@@ -165,7 +165,7 @@
                             							
                             <targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.1908970583" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
                             							
-                            <builder buildPath="/Logger/build/Debug" enableAutoBuild="true" id="de.marw.cdt.cmake.core.genscriptbuilder.2023120089" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="CMake Builder (portable)" parallelBuildOn="true" parallelizationNumber="optimal" superClass="de.marw.cdt.cmake.core.genscriptbuilder"/>
+                            <builder buildPath="/Logger/build/Debug" enableAutoBuild="true" id="de.marw.cdt.cmake.core.genscriptbuilder.2023120089" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="CMake Builder (portable)" parallelBuildOn="false" superClass="de.marw.cdt.cmake.core.genscriptbuilder"/>
                             							
                             <tool id="cdt.managedbuild.tool.gnu.archiver.base.369912207" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
                             							
@@ -305,7 +305,7 @@
                             							
                             <targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.399503995" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
                             							
-                            <builder buildPath="/Logger/build/Coverage" id="de.marw.cdt.cmake.core.genscriptbuilder.801275000" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="CMake Builder (portable)" parallelBuildOn="true" parallelizationNumber="optimal" superClass="de.marw.cdt.cmake.core.genscriptbuilder"/>
+                            <builder buildPath="/Logger/build/Coverage" id="de.marw.cdt.cmake.core.genscriptbuilder.801275000" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="CMake Builder (portable)" parallelBuildOn="false" superClass="de.marw.cdt.cmake.core.genscriptbuilder"/>
                             							
                             <tool id="cdt.managedbuild.tool.gnu.archiver.base.578597039" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
                             							
