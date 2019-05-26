@@ -5,7 +5,8 @@ target_sources(Logger
 		BreakpointLogger.cpp
 		ConsoleLogger.cpp
 		Entry.cpp
-		FileLogger.cpp		
+		FileLogger.cpp
+		Indent.cpp
 		Level.cpp
 		Location.cpp
 		Log.cpp
@@ -19,6 +20,7 @@ target_sources(Logger
 		${CMAKE_CURRENT_SOURCE_DIR}/ConsoleLogger.hpp
 		${CMAKE_CURRENT_SOURCE_DIR}/Entry.hpp
 		${CMAKE_CURRENT_SOURCE_DIR}/FileLogger.hpp
+		${CMAKE_CURRENT_SOURCE_DIR}/Indent.hpp
 		${CMAKE_CURRENT_SOURCE_DIR}/Level.hpp
 		${CMAKE_CURRENT_SOURCE_DIR}/Location.hpp
 		${CMAKE_CURRENT_SOURCE_DIR}/Log.hpp

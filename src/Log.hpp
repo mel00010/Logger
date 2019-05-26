@@ -24,6 +24,7 @@
 #include "ConsoleLogger.hpp"
 #include "Entry.hpp"
 #include "FileLogger.hpp"
+#include "Indent.hpp"
 #include "Level.hpp"
 #include "Location.hpp"
 #include "Logger.hpp"
@@ -40,7 +41,6 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/io.hpp>
 #endif /* __has_include(<glm/gtx/io.hpp>) */
-
 
 template<typename Integer> inline std::string hex(Integer data, size_t space = 8) {
 	std::stringstream ss;

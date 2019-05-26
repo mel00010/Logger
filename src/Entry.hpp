@@ -20,10 +20,12 @@
 #ifndef SRC_ENTRY_HPP_
 #define SRC_ENTRY_HPP_
 
+#include "Indent.hpp"
 #include "Level.hpp"
 #include "Location.hpp"
 #include "Metadata.hpp"
 
+#include <ostream>
 #include <sstream>
 
 namespace Log {
@@ -47,7 +49,9 @@ class Entry {
 	private:
 		Metadata metadata;
 		bool has_content;
-		std::stringstream stream;
+		std::stringstream sstream;
+		Indent indentor = Indent(sstream);
+		std::ostream stream = std::ostream(&indentor);
 };
 
 } /* namespace Log */
