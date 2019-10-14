@@ -27,7 +27,7 @@
 namespace Log {
 
 Entry::Entry(Level level, const Location& location) :
-		metadata { level, location }, has_content(false) {
+		metadata { level, location }, has_content(false), indentor(sstream), stream(&indentor) {
 }
 
 Entry::~Entry() {

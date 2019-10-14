@@ -50,8 +50,8 @@ class Entry {
 		Metadata metadata;
 		bool has_content;
 		std::stringstream sstream;
-		Indent indentor = Indent(sstream);
-		std::ostream stream = std::ostream(&indentor);
+		Indent indentor;
+		std::ostream stream;
 };
 
 } /* namespace Log */
