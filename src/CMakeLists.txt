@@ -1,4 +1,5 @@
 add_library(Logger STATIC "")
+add_library(Logger::Logger ALIAS Logger)
 
 target_sources(Logger
 	PRIVATE
